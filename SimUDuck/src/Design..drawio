@@ -1,0 +1,113 @@
+<mxfile host="65bd71144e">
+    <diagram id="0TLCunDB9XdwSed6triq" name="Client">
+        <mxGraphModel dx="1266" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="7" value="Duck" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="130" width="180" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="FlyBehavior flyBehavior&#10;QuarkBehavior quarkBehavior" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="7" vertex="1">
+                    <mxGeometry y="26" width="180" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="7" vertex="1">
+                    <mxGeometry y="70" width="180" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="swim()&#10;&#10;display()&#10;&#10;performFly()&#10;&#10;performQuark()&#10;&#10;setFlyBehavior()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="7" vertex="1">
+                    <mxGeometry y="78" width="180" height="152" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.481;entryY=1.001;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="11" target="10" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="MallardDuck" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="470" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="display(){&#10;// looks like a mallard}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="11" vertex="1">
+                    <mxGeometry y="26" width="140" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.483;entryY=1.014;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="16" target="10" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="RubberDuck" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="340" y="470" width="160" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="display(){&#10;// looks like a rubberduck}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1" vertex="1">
+                    <mxGeometry x="340" y="496" width="140" height="44" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="R6soOr2FYPNCDzpkC-Qo" name="Fly Behavior">
+        <mxGraphModel dx="765" dy="490" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="ELi226NnnyCruKqiO-ep-1" value="&lt;&lt;Interface&gt;&gt;&#10;FlyBehavior&#10;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="50" width="140" height="76" as="geometry"/>
+                </mxCell>
+                <mxCell id="ELi226NnnyCruKqiO-ep-2" value="fly()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="ELi226NnnyCruKqiO-ep-1" vertex="1">
+                    <mxGeometry y="50" width="140" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="ELi226NnnyCruKqiO-ep-9" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="ELi226NnnyCruKqiO-ep-5" target="ELi226NnnyCruKqiO-ep-2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ELi226NnnyCruKqiO-ep-5" value="FlyWithWings" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="220" y="200" width="160" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="ELi226NnnyCruKqiO-ep-6" value="fly(){&#10;    // implements duck flying&#10;}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="ELi226NnnyCruKqiO-ep-5" vertex="1">
+                    <mxGeometry y="50" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ELi226NnnyCruKqiO-ep-10" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.604;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="ELi226NnnyCruKqiO-ep-7" target="ELi226NnnyCruKqiO-ep-2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ELi226NnnyCruKqiO-ep-7" value="FlyNoWings" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="510" y="200" width="160" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="ELi226NnnyCruKqiO-ep-8" value="fly(){&#10;    // can't fily&#10;}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="ELi226NnnyCruKqiO-ep-7" vertex="1">
+                    <mxGeometry y="50" width="160" height="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram name="QuarkBehavior" id="k0ueYQqE_QTfxaMhmKjH">
+        <mxGraphModel dx="1071" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="pzz7JS_p35l4QFQM209k-0"/>
+                <mxCell id="pzz7JS_p35l4QFQM209k-1" parent="pzz7JS_p35l4QFQM209k-0"/>
+                <mxCell id="pzz7JS_p35l4QFQM209k-2" value="&lt;&lt;Interface&gt;&gt;&#10;QuarkBehavior&#10;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="pzz7JS_p35l4QFQM209k-1" vertex="1">
+                    <mxGeometry x="370" y="50" width="140" height="76" as="geometry"/>
+                </mxCell>
+                <mxCell id="pzz7JS_p35l4QFQM209k-3" value="quark()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="pzz7JS_p35l4QFQM209k-2" vertex="1">
+                    <mxGeometry y="50" width="140" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="pzz7JS_p35l4QFQM209k-4" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="pzz7JS_p35l4QFQM209k-1" source="pzz7JS_p35l4QFQM209k-5" target="pzz7JS_p35l4QFQM209k-3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="pzz7JS_p35l4QFQM209k-5" value="Quark" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="pzz7JS_p35l4QFQM209k-1" vertex="1">
+                    <mxGeometry x="290" y="200" width="160" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="pzz7JS_p35l4QFQM209k-6" value="quark(){&#10;    // implements duck quark&#10;}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="pzz7JS_p35l4QFQM209k-5" vertex="1">
+                    <mxGeometry y="50" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="pzz7JS_p35l4QFQM209k-7" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.604;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="pzz7JS_p35l4QFQM209k-1" source="pzz7JS_p35l4QFQM209k-8" target="pzz7JS_p35l4QFQM209k-3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="pzz7JS_p35l4QFQM209k-8" value="Squeak" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="pzz7JS_p35l4QFQM209k-1" vertex="1">
+                    <mxGeometry x="510" y="200" width="160" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="pzz7JS_p35l4QFQM209k-9" value="quark(){&#10;    // duck squeak&#10;}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="pzz7JS_p35l4QFQM209k-8" vertex="1">
+                    <mxGeometry y="50" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="7hhJlMXBIeCyjdn2rNS4-3" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="pzz7JS_p35l4QFQM209k-1" source="7hhJlMXBIeCyjdn2rNS4-1" target="pzz7JS_p35l4QFQM209k-3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7hhJlMXBIeCyjdn2rNS4-1" value="MuteQuack" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="pzz7JS_p35l4QFQM209k-1" vertex="1">
+                    <mxGeometry x="70" y="200" width="160" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="7hhJlMXBIeCyjdn2rNS4-2" value="quark(){&#10;    // can't quark&#10;}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="7hhJlMXBIeCyjdn2rNS4-1" vertex="1">
+                    <mxGeometry y="50" width="160" height="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
