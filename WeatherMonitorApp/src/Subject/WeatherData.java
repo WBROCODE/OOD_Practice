@@ -31,7 +31,6 @@ public class WeatherData implements Subject{
         notifyObserver();
     }
 
-
     public void setter(float humility,float pressure,float temperature){
         this.temperature = temperature;
         this.humility = humility;
