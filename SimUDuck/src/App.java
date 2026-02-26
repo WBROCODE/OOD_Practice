@@ -1,7 +1,6 @@
 import Animals.*;
 import Behavior.Fly.FlyRocketPowered;
 import Behavior.Quark.MuteQuark;
-import Behavior.Quark.Squeak;
 
 public class App {
     public static void main(String[] args) throws Exception {
