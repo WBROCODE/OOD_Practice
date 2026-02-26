@@ -23,7 +23,7 @@ public class WeatherData implements Subject{
     }
     public void notifyObserver(){
         for(Observer o : observers){
-            o.update(humility, pressure, temperature);
+            o.update();
         }
     }
 

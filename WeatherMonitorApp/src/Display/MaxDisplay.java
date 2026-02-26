@@ -14,10 +14,10 @@ public class MaxDisplay implements Display, Observer{
         weatherData.registerObserver(this);
     }
 
-    public void update(float humidity,float pressure,float temperature){
-        this.humidity = Math.max(humidity,  this.humidity);
-        this.temperature =  Math.max(temperature,  this.temperature);
-        this.pressure = Math.max(pressure,  this.pressure);;
+    public void update(){
+        this.humidity = Math.max( weatherData.getHumility(),  this.humidity);
+        this.temperature =  Math.max( weatherData.getTemperature(),  this.temperature);
+        this.pressure = Math.max(weatherData.getPressure(),  this.pressure);;
         display();
     }
 

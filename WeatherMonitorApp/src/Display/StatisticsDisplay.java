@@ -1,22 +1,22 @@
 package Display;
 
 import Observer.Observer;
-import Subject.Subject;
+import Subject.WeatherData;
 
 public class StatisticsDisplay implements Observer, Display{
     private float temperature;
     private float humidity;
-    private Subject WeatherData;
+    private WeatherData weatherData;
 
-    public StatisticsDisplay(Subject WeatherData){
-        this.WeatherData = WeatherData;
-        WeatherData.registerObserver(this);
+    public StatisticsDisplay(WeatherData weatherData){
+        this.weatherData = weatherData;
+        weatherData.registerObserver(this);
     }
 
 
-    public void update(float humidity,float pressure,float temperature){
-        this.humidity = humidity;
-        this.temperature = temperature;
+    public void update(){
+        this.humidity = weatherData.getHumility();
+        this.temperature = weatherData.getTemperature();
         display();
     }
 
