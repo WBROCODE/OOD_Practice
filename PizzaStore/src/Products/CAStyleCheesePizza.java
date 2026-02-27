@@ -1,11 +1,31 @@
 package Products;
 
-public class CAStyleCheesePizza extends Pizza{
-    public CAStyleCheesePizza(){
-        name = "CA Style Sauce and Cheese Pizza";
-        dough = "Thin Crust Dough";
-        sauce = "Marinara Sauce";
+import IngredientCreator.CAFactory;
+import IngredientCreator.IngredientFactory;
+import Ingredients.Veggie;
+import Ingredients.ca.MozzarellaCheese;
+import Ingredients.ny.MarinaraSauce;
+import Ingredients.ny.ReggianoCheese;
+import Ingredients.ny.ThinCrustDough;
 
-        toppings.add("Shredded Mozzarella Cheese");
+public class CAStyleCheesePizza extends Pizza{
+    private final IngredientFactory factory;
+    public CAStyleCheesePizza(){
+        // factory
+        factory = new CAFactory();
     }
+
+    public void prepare(){
+        // add ingrediente
+        System.out.println("Preparing " + name);
+        // factory manufature these
+        dough = factory.createDough();
+        sauce = factory.createSauce();
+        cheese = factory.createCheese();
+
+        System.out.println("Tossing dough: " + dough.getDescription());
+        System.out.println("Adding sauce: " + sauce.getDescription());
+        System.out.println("Adding Cheese: " + cheese.getDescription());
+    }
+
 }

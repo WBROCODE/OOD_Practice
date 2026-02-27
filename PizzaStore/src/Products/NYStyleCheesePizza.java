@@ -1,11 +1,29 @@
 package Products;
 
-public class NYStyleCheesePizza extends Pizza{
-    public NYStyleCheesePizza(){
-        name = "NY Style Sauce and Cheese Pizza";
-        dough = "Thin Crust Dough";
-        sauce = "Marinara Sauce";
+import IngredientCreator.IngredientFactory;
+import IngredientCreator.NYFactory;
+import Ingredients.Veggie;
+import Ingredients.ny.MarinaraSauce;
+import Ingredients.ny.ReggianoCheese;
+import Ingredients.ny.ThinCrustDough;
 
-        toppings.add("Grated Reggiano Cheese");
+public class NYStyleCheesePizza extends Pizza{
+    private final IngredientFactory factory;
+    public NYStyleCheesePizza(){
+        factory = new NYFactory();
     }
+
+    public void prepare(){
+        // add ingrediente
+        System.out.println("Preparing " + name);
+        // factory manufature these
+        dough = factory.createDough();
+        sauce = factory.createSauce();
+        cheese = factory.createCheese();
+
+        System.out.println("Tossing dough: " + dough.getDescription());
+        System.out.println("Adding sauce: " + sauce.getDescription());
+        System.out.println("Adding Cheese: " + cheese.getDescription());
+    }
+
 }

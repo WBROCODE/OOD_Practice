@@ -9,14 +9,17 @@ void main() {
     PizzaStore store = new NYPizzaStore();
     Pizza pizzaOne = store.createOrder("cheese");
     System.out.println("Order: " + pizzaOne.getName());
+
     System.out.println("---------------------------------");
     Pizza pizzaTwo = store.createOrder("veggie");
     System.out.println("Order: " + pizzaTwo.getName());
+
+    System.out.println("---------------------------------");
     PizzaStore storeTwo = new CAPizzaStore();
-    System.out.println("---------------------------------");
-    Pizza pizzaThree = store.createOrder("veggie");
+    Pizza pizzaThree = storeTwo.createOrder("veggie");
     System.out.println("Order: " + pizzaThree.getName());
+
     System.out.println("---------------------------------");
-    Pizza pizzaFour = store.createOrder("cheese");
-    System.out.println("Order: " + pizzaTwo.getName());
+    Pizza pizzaFour = storeTwo.createOrder("cheese");
+    System.out.println("Order: " + pizzaFour.getName());
 }
