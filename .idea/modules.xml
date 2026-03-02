@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AdapterDesign/AdapterDesign.iml" filepath="$PROJECT_DIR$/AdapterDesign/AdapterDesign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AdapterDesign/src/AdapterDesign2.iml" filepath="$PROJECT_DIR$/AdapterDesign/src/AdapterDesign2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BeverageOrder/BeverageOrder.iml" filepath="$PROJECT_DIR$/BeverageOrder/BeverageOrder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommmendDesign/CommmendDesign.iml" filepath="$PROJECT_DIR$/CommmendDesign/CommmendDesign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/OOD.iml" filepath="$PROJECT_DIR$/.idea/OOD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PizzaStore/PizzaStore.iml" filepath="$PROJECT_DIR$/PizzaStore/PizzaStore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PuzzleGame/PuzzleGame.iml" filepath="$PROJECT_DIR$/PuzzleGame/PuzzleGame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SimUDuck/SimUDuck.iml" filepath="$PROJECT_DIR$/SimUDuck/SimUDuck.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Singleton/Singleton.iml" filepath="$PROJECT_DIR$/Singleton/Singleton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WeatherMonitorApp/WeatherMonitorApp.iml" filepath="$PROJECT_DIR$/WeatherMonitorApp/WeatherMonitorApp.iml" />
+    </modules>
+  </component>
+</project>
