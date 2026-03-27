@@ -19,12 +19,11 @@ public class ParkingLots {
 
     public Tickets enterVehicle(Vehicles vehicle){
         ParkingSpots spot = pm.findParkingLots(vehicle);
-
         if(spot != null){
-            Tickets ticket = new Tickets(generateTicketId(), vehicle, spot, LocalDateTime.now(), null){
-                return ticket;
-            }
+            Tickets ticket = new Tickets(generateTicketId(), vehicle, spot, LocalDateTime.now());
+            return ticket;
         }
+        return null;
     }
 
     public void leaveVehicle(Tickets ticket){
