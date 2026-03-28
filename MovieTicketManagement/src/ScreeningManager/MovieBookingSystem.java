@@ -8,6 +8,7 @@ import Cinemas.Cinema;
 import Cinemas.Movie.Movie;
 import Cinemas.Screening.Screening;
 import Cinemas.Seats.Seats;
+import Orders.Order;
 import Orders.Tickets.Ticket;
 
 public class MovieBookingSystem {
@@ -33,12 +34,22 @@ public class MovieBookingSystem {
         sm.addScreening(movie, sc);
     }
 
-    public void bookTicket(Screening sc, Seats seats){
-        if(!sm.checkBooked(sc, seats)){
-            double price = seats.getPrice();
-            Ticket ticket = new Ticket(generateTicketId(), sc, seats, price);
-            sm.addTicket(sc, ticket);
+    public Order bookTicket(Screening sc, List<String> seatNumbers){
+        for (String seatNo : seatNumbers) {
+            Seats seat = sc.getRoom().getLayout().getSeatsByNumber(seatNo);
+            if (seat == null) return null;                 
+            if (sm.checkBooked(sc, seat)) return null;     
         }
+
+        Order order = new Order(); 
+        for (String seatNo : seatNumbers) {
+            Seats seat = sc.getRoom().getLayout().getSeatsByNumber(seatNo);
+            double price = seat.getPrice();
+            Ticket ticket = new Ticket(generateTicketId(), sc, seat, price);
+            sm.addTicket(sc, ticket);
+            order.addTicket(ticket);
+        }
+        return order;
     }
 
     // get Screening
