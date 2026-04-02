@@ -1,10 +1,12 @@
 package Predicate.ComplexComparator;
 
+import Predicate.Predicate;
+
 public class NotComparator implements ComplexComparator {
 
-    private Predicate.Predicate operand;
+    private Predicate operand;
 
-    public NotComparator(Predicate.Predicate predicate) {
+    public NotComparator(Predicate predicate) {
         this.operand = predicate;
     }
 
